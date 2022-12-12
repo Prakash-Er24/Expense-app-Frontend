@@ -1,0 +1,53 @@
+.home{
+    position: relative;
+    margin-top: 30px;
+}
+.month-form select{
+padding: 5px 10px;
+margin:0 5px 0 0;
+width: 15%;
+border-radius: 5px;
+border: 1px solid rgb(165, 165, 165);
+}
+.month-form input{
+    padding:5px 20px;
+    background-color:rgba(0, 98, 128, 0.178);
+    color:rgb(0, 88, 122);
+    border:1px solid rgb(0, 88, 122);
+    border-radius: 5px;
+    cursor:pointer;
+}
+.month-form input:hover{
+    padding:5px 20px;
+    background-color:rgb(39, 155, 201);
+    color:white;
+    border:1px solid rgb(39, 155, 201);
+    border-radius: 5px;
+    cursor:pointer;
+}
+.month-form small{
+    color: red;
+    
+}
+.month-data{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.month-list{
+    border:1px solid rgb(182, 181, 181);
+    margin:12px;
+    width:250px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(206, 206, 206, 0.514);
+    cursor: pointer;
+    font-size: 120%;
+    font-family: 'Times New Roman', serif;
+}
+
+.month-list:hover{
+    box-shadow: 2px 2px 4px gray;
+}

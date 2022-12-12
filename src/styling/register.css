@@ -1,0 +1,58 @@
+
+.register{
+    width: 25%;
+    margin-left: 37%;
+    text-align: center;
+    margin-top: 15px;
+    height:380px;
+    background-color: white;
+    box-shadow: 6px 6px 8px gray;
+    padding:10px 0 10px 0;
+    border-radius:10px;
+    border:1px solid rgb(189, 189, 189)
+}
+.register h2{
+    font-family: 'Times New Roman', serif;
+    font-size: 200%;
+    margin-top: 5px;
+}
+
+.register input{
+    border-radius: 5px;
+    height:30px;
+    padding-left:10px;
+    width:60%;
+    margin-bottom: -5px;
+    border:1px solid rgb(189, 189, 189)
+}
+
+.register span{
+    color:red;
+    font-size: 80%;
+}
+
+.register input[name="email"]{
+    margin-top: 15px;
+}
+.register input[name="password"]{
+    margin-top: 15px;
+}
+.register input[name="occupation"]{
+    margin-top: 15px;
+}
+
+.register input[type="submit"]{
+    margin-top:40px;
+    width:30%;
+    background-color: rgba(2, 158, 179, 0.349);
+    border:1px solid rgba(4, 95, 122, 0.795);
+    color: rgb(0, 64, 83);
+}
+
+.register input[type="submit"]:hover{
+    background-color: rgb(4, 128, 211);
+    border:1px solid rgb(1, 114, 189);
+    color:white;
+    font-weight: 400;
+    cursor: pointer;
+}

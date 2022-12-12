@@ -1,0 +1,44 @@
+.expenses-form select{
+    background: transparent;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    height:25px;
+}
+
+.expenses-form input[type="text"]{
+    margin-bottom: 30px;
+    width:200px;
+    height:20px;
+    padding:5px;
+    border-radius: 5px;
+}
+.expenses-form input[type="date"]{
+    height:25px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.expenses-form small{
+    color:red
+}
+
+.expenses-form input[type="submit"]{
+    border-radius: 5px;
+    border: 1px solid rgb(10, 122, 10);
+    color: rgb(0, 92, 0);
+    background-color: transparent;
+    width:100px;
+    padding:6px;
+}
+
+.expenses-form input[type="submit"]:hover{
+    border-radius: 5px;
+    border: 1px solid rgb(10, 122, 10);
+    background-color: rgb(10, 122, 10);
+    color:white;
+    width:100px;
+    cursor:pointer;
+    padding: 6px;
+}
+
+

@@ -1,0 +1,45 @@
+.profile{
+    position:relative;
+}
+.profile .image{
+    position: absolute;
+    right:0;
+    top:0;
+    margin-right:20px;
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+}
+
+.profile .check-image{
+    width:25px;
+   
+}
+.profile p{
+    font-family: Garamond, serif;
+    font-size: 120%;
+}
+.profile input[type="submit"]{
+    background-color: rgb(0, 132, 194);
+    padding:5px 10px;
+    color:white;
+    cursor: pointer;
+    border:1px solid rgb(0, 132, 194);
+    border-radius:5px
+}
+
+.profile input[type='file']{
+    border:1px solid gray;
+    border-radius:5px;
+    margin-right:10px;
+    background-color:white;
+}
+
+.profile input[type='file']::file-selector-button{
+    padding:5px;
+    border:1px solid gray;
+    border-top: none ;
+    border-bottom: none;
+    border-left: none;
+    color: dodgerblue;
+}

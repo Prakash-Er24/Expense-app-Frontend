@@ -1,0 +1,87 @@
+.settings{
+    margin: 40px 0 0 20px;
+    position:relative;
+}
+.settings .forms{
+    position:absolute;
+    right:0;
+    width: 30%;
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 10px;
+    padding:40px;
+    background-color: rgba(226, 226, 226, 0.226);
+}
+
+.settings .categories{
+    width:60%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.settings .forms span{
+    font-size: 130%;
+    font-weight: bold;
+    font-family: 'Times New Roman', serif;
+}
+.settings p{
+    font-family: Georgia, serif;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.budget-form input[type="text"],.category-form input[type="text"]{
+    padding:7px;
+    border-radius: 5px;
+    width:80%;
+    border:1px solid rgb(182, 182, 182)
+}
+.budget-form input[type="submit"],.category-form input[type="submit"]{
+    margin: 20px 2px 30px 5px;
+    width: 80px;
+    padding: 5px;
+    border-radius: 5px;
+    border:1px solid rgb(0, 113, 189);
+    background-color: rgba(87, 186, 252, 0.219);
+    color:rgb(0, 94, 156);
+    cursor:pointer;
+}
+.budget-form input[type="submit"]:hover,.category-form input[type="submit"]:hover{
+    width: 80px;
+    padding: 5px;
+    border-radius: 5px;
+    border:1px solid rgb(0, 113, 189);
+    background-color: rgba(1, 109, 182, 0.76);
+    color:white;
+    cursor:pointer;
+}
+
+
+.category-form input[type="submit"]{
+    float: left;
+}
+.budget-form input[type="submit"]{
+    float: left;
+
+}
+.category-edit-form button{
+    background-color: rgb(228, 0, 0);
+    border:1px solid rgb(228, 0, 0);
+    color:white;
+    width: 80px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor:pointer;
+}
+
+.category-item{
+    border:1px solid rgb(192, 192, 192);
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+    margin:15px;
+    width: 250px;
+    height: 90px;
+    padding:15px 0 10px 20px
+}
+.category-item:hover{
+    box-shadow: 2px 2px 4px gray;
+}
+
