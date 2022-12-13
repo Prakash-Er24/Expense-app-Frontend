@@ -3,7 +3,7 @@ import {useDispatch, useSelector} from 'react-redux'
 import swal from 'sweetalert'
 import { startGetUser, startUpdateUserImage } from '../../actions/userAction'
 import { startGetMonth } from '../../actions/monthAction'
-import defaultImg from '../icons/default.png'
+import defaultImg from '../../icons/default.png'
 import '../../styling/profile.css'
 
 function Profile(props) {

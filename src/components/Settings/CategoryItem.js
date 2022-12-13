@@ -2,9 +2,9 @@ import React,{ useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { Space, Popconfirm } from 'antd';
 
-import edit from '../icons/edit.png'
-import trash from '../icons/trash.png'
-import restore from '../icons/restore.png'
+import edit from '../../icons/edit.png'
+import trash from '../../icons/trash.png'
+import restore from '../../icons/restore.png'
 import CategoryForm from './CategoryForm'
 import { startUpdateCategory } from '../../actions/categoryAction'
 import '../../styling/settings.css'
