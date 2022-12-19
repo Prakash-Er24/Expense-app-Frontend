@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 
-import { startAddMonth, startGetMonths, startGetMonth } from '../../actions/monthAction'
+import { startAddMonth, startGetMonths, startSelectedMonth } from '../../actions/monthAction'
 import { startGetUser } from '../../actions/userAction'
 import '../../styling/home.css'
 
@@ -50,9 +50,9 @@ function Home(props) {
             const url = `${month.month}${month.year}`
             props.history.push(`/dashboard/${url}`)
         }
-        dispatch(startGetMonth(data._id,redirect))
-
+        dispatch(startSelectedMonth(data._id,redirect))
     }
+    
   return (
     <div className='home'>
         <div className='month-form'>

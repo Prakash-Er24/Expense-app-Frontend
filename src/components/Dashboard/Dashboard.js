@@ -7,7 +7,7 @@ import ExpensesTable from './ExpensesTable'
 import BudgetOverview from './BudgetOverview'
 import CategoryTable from './CategoryWiseTable'
 import CategoryChart from './CategoryWiseChart';
-import { startGetMonth } from '../../actions/monthAction'
+import { startSelectedMonth } from '../../actions/monthAction'
 import { startGetBudget } from '../../actions/budgetAction'
 import { startGetExpenses } from '../../actions/expensesAction'
 import { startGetCategories } from '../../actions/categoryAction'
@@ -28,7 +28,7 @@ function Dashboard(props) {
   const categoryWiseData = useSelector((state)=>state.categoryWiseData)
 
   useEffect(()=>{
-    dispatch(startGetMonth(localStorage.getItem('month')))
+    dispatch(startSelectedMonth(localStorage.getItem('month')))
     dispatch(startGetBudget())
     dispatch(startGetCategories())
   },[dispatch])

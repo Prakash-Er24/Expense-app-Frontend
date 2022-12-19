@@ -61,7 +61,7 @@ const getMonths = (data) => {
     return {type:'GET_MONTHS',payload:data}
 }
 
-export const startGetMonth = (id,redirect) => {
+export const startSelectedMonth = (id,redirect) => {
     return (dispatch) => {
         axios.get(`http://localhost:3210/api/user/month/${id}`,{
                     headers:{ 'authorization':localStorage.getItem('token') }

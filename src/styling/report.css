@@ -1,0 +1,101 @@
+.printBtn{
+    float: right;
+    color:white;
+    padding:3px 10px;
+    border: 1px solid rgba(0, 123, 180, 0.767);
+    background-color: rgba(0, 123, 180, 0.767);
+    cursor:pointer;
+    font-size: 105%;
+}
+
+.check-box{
+    text-align: center;
+    margin-top: 20px;
+}
+.check-box span{
+    font-size: 110%;
+    margin-right: 20px;
+}
+
+.print-table{
+    margin:50px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 0 20px 20px 20px;
+    background-color: white;
+}
+
+.print-table p{
+    text-align: center;
+    color:rgb(182, 182, 182);
+    font-weight: bold;
+    font-size: 105%;
+}
+
+.print-table h1{
+    margin:0 0 10px 20px;
+    font-size: 140%;
+    font-family: Georgia, serif;
+    color: rgb(0, 108, 170);
+}
+
+.print-table h3{
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 140%;
+    color:Gray
+
+}
+.print-table .print-title{
+    text-align: center;
+    font-size:180%;
+    color: Red;
+    margin: 20px;
+}
+.category-wise-list,.non-deleted-expense,.deleted-expense{
+    font-family: "Times New Roman", Times, serif;
+    border-collapse: collapse;
+}
+/* .category-wise-list,.non-deleted-expense,.deleted-expense,th,td{
+    border: 1px solid gray;
+} */
+.category-wise-list td{
+    padding:5px 10px;
+    border: 1px solid gray;
+}
+
+.non-deleted-expense td{
+    padding:5px 10px;
+    border: 1px solid gray;
+}
+.deleted-expense td{
+    padding:5px 10px;
+    border: 1px solid gray;
+}
+
+.category-wise-list th{
+    padding:5px 10px;
+    color:rgb(1, 98, 136);
+    font-size: 105%;
+    border: 1px solid gray;
+}
+.non-deleted-expense th{
+    padding:5px 10px;
+    color:rgb(1, 98, 136);
+    font-size: 105%;
+    border: 1px solid gray;
+}
+.deleted-expense th{
+    padding:5px 10px;
+    color:rgb(1, 98, 136);
+    font-size: 105%;
+    border: 1px solid gray;
+}
+.category-wise-list{
+    width:80%;
+    margin-left: 10%;
+}
+.deleted-expense,.non-deleted-expense{
+    width: 90%;
+    margin-left: 5%;
+}

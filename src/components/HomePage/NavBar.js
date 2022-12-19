@@ -9,9 +9,10 @@ import PrivateRoute from './PrivateRoute'
 import Register from "../User/Register";
 import Profile from "../User/Profile";
 import Login from "../User/Login";
+import Report from "../Report/Report";
 import Home from "./Home";
 import '../../styling/navBar.css'
-
+ 
 function NavBar(props) {
   const [loggedIn,setLoggedIn] = useState(Boolean(localStorage.getItem('token')))
   const dispatch = useDispatch()
@@ -44,6 +45,7 @@ function NavBar(props) {
             <Link to = '/' className="navBar-link">Home</Link>
             {selectedMonth && <Link to = {`/dashboard/${selectedMonth.month}${selectedMonth.year}`} className="navBar-link">Dashboard</Link>}
             {selectedMonth && <Link to = {`/settings/${selectedMonth.month}${selectedMonth.year}`} className="navBar-link">Settings</Link>}
+            {selectedMonth && <Link to = {`/report/${selectedMonth.month}${selectedMonth.year}`} className="navBar-link">Report</Link>}
             <Link to = '/profile' className="navBar-link">Profile</Link>
             <Link to = '/login' className="navBar-right" onClick={handleLogout}>logout</Link>
             
@@ -62,6 +64,7 @@ function NavBar(props) {
         <PrivateRoute path="/" component={Home} exact/>
         <PrivateRoute path='/dashboard/:month' component={Dashboard} exact/>
         <PrivateRoute path='/settings/:month' component={SettingsPage} exact/>
+        <PrivateRoute path='/report/:month' component={Report} exact />
         <PrivateRoute path='/profile' component={Profile} />
     </div>
   )

@@ -40,7 +40,7 @@ h2{
 }
 .category-table{
     border:1px solid rgb(206, 206, 206);
-    border-radius: 6px;
+    border-radius: 10px;
 }
 .chartTable-select{
     position:absolute;
@@ -112,15 +112,19 @@ h2{
 }
 .expenses-table{
     border:1px solid rgb(182, 182, 182);
-    border-radius: 5px;
+    border-radius: 10px;
     box-shadow: 2px 2px 4px gray;
     background-color: white;
 }
 .ant-table thead{
     font-size: 110%;
 }
-
 .ant-table {
-    /* border:1px solid rgb(199, 199, 199); */
-    border-radius: 6px;
+    background-color: rgb(28, 58, 85);
+}
+.ant-table,th{
+    border:1px solid rgba(128, 128, 128, 0.5);
+}
+.ant-table,td{
+    border:1px solid rgba(128, 128, 128, 0.5);
 }

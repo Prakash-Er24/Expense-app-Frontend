@@ -2,40 +2,39 @@ import React, { useEffect, useState } from 'react'
 import {useDispatch, useSelector} from 'react-redux'
 import swal from 'sweetalert'
 import { startGetUser, startUpdateUserImage } from '../../actions/userAction'
-import { startGetMonth } from '../../actions/monthAction'
+import { startSelectedMonth } from '../../actions/monthAction'
 import defaultImg from '../../icons/default.png'
 import '../../styling/profile.css'
 
 function Profile(props) {
     const dispatch = useDispatch()
-    const [select,setSelect] = useState('')
+    const [selectImage,setSelectImage] = useState('')
 
     const user = useSelector((state)=>state.user)
 
     useEffect(()=>{
-        dispatch(startGetUser())
-        dispatch(startGetMonth(localStorage.getItem('month')))
+        dispatch(startGetUser()) 
+        localStorage.getItem('month') && dispatch(startSelectedMonth(localStorage.getItem('month')))
     },[dispatch])
 
     const handleChange = (e) => {
-        setSelect(e.target.files[0])
+        setSelectImage(e.target.files[0])
     }
     const handleSubmit = (e) => {
         e.preventDefault()
         const formData = new FormData()
-        formData.append('image',select)
+        formData.append('image',selectImage)
         const reset = () => {
             swal({title:'Profile picture succesfully updated',icon:'success'})
-            setSelect('')
+            setSelectImage('')
         }
         dispatch(startUpdateUserImage(formData,reset))
     }
-
+       
     return (
         <div className='profile'>
             <h2>Profile</h2>
-            <img src={user.img ? `http://localhost:3210/${user.img}`: defaultImg} alt="Profile"  className='image'/>
-            { 
+            <img src={user.img ? `http://localhost:3210/${user.img}`: defaultImg} alt="Profile"  className='image'/>            { 
                 Object.keys(user).length>0 && <>              
                     <p>Name - {user.profile.name} </p>
                     <p>Email - {user.email} </p>
@@ -44,11 +43,11 @@ function Profile(props) {
                 </>
             }
             <b>Upload Profile picture</b><br/>
-            <img src={select ? URL.createObjectURL(select) :''} alt="" className='check-image' />
+            <img src={selectImage ? URL.createObjectURL(selectImage) :''} alt="" className='check-image' />
             <form onSubmit = {handleSubmit}>
                 <input type="file" onChange={handleChange} />
-                <input type="submit" value="Upload" disabled={!select}
-                style={{backgroundColor:!select && 'transparent',color:!select && 'gray'}}
+                <input type="submit" value="Upload" disabled={!selectImage}
+                style={{backgroundColor:!selectImage && 'transparent',color:!selectImage && 'gray'}}
                 /><br/>
             </form>
         </div>

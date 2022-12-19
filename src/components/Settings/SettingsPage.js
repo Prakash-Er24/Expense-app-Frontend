@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import Budget from './Budget'
 import CategoryForm from './CategoryForm'
 import CategoryItem from './CategoryItem'
-import { startGetMonth } from '../../actions/monthAction'
+import { startSelectedMonth } from '../../actions/monthAction'
 import { startGetBudget } from '../../actions/budgetAction'
 import { startGetExpenses } from '../../actions/expensesAction'
 import { startGetCategories } from '../../actions/categoryAction'
@@ -17,7 +17,7 @@ function SettingsPage(props) {
         dispatch(startGetBudget())
         dispatch(startGetCategories())
         dispatch(startGetExpenses())
-        dispatch(startGetMonth(localStorage.getItem('month')))
+        dispatch(startSelectedMonth(localStorage.getItem('month')))
     },[dispatch])
 
   return (
