@@ -61,7 +61,7 @@
 .budget-form input[type="submit"]{
     float: left;
 
-}
+} 
 .category-edit-form button{
     background-color: rgb(228, 0, 0);
     border:1px solid rgb(228, 0, 0);
@@ -69,6 +69,7 @@
     width: 80px;
     padding: 5px;
     border-radius: 5px;
+    margin-top: 2px;
     cursor:pointer;
 }
 

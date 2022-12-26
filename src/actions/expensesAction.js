@@ -9,7 +9,6 @@ export const startAddExpense = (data,closeModal,resetForm) => {
         })
         .then((response)=>{
             const result = response.data
-            console.log(result)
             if(result.hasOwnProperty('notice'))
                 {
                     swal({title:result.notice,icon:'warning'})

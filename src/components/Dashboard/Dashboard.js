@@ -87,9 +87,9 @@ function Dashboard(props) {
 
       <div className='dashboard-card'>
         <div className="chartTable-select">
-            <select onChange={switchType}>
-              <option value="chart" selected={type==='chart'}>Chart</option>
-              <option value="table" selected={type==='table'}>Table</option>
+            <select defaultValue = {type} onChange={switchType}>
+              <option value="chart" >Chart</option>
+              <option value="table" >Table</option>
             </select>
         </div>
         
